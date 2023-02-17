@@ -9,7 +9,6 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 // actions
-
 const pLanguages = [];
 
 // routes
@@ -27,6 +26,7 @@ app.post("/", (req, res) => {
   res.redirect("/");
 });
 
+// Server listening
 app.listen(port, () => {
   console.log(`EJS app listening on port http://localhost:${port}`);
 });
