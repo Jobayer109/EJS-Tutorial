@@ -16,6 +16,10 @@ app.get("/", (req, res) => {
   res.render("index", { langs: pLanguages });
 });
 
+app.get("/contact", (req, res) => {
+  res.render("contact", {});
+});
+
 app.post("/", (req, res) => {
   const pLanguage = req.body.pLanguage;
   pLanguages.push(pLanguage);

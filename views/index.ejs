@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejs App</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+
+    <%- include('layouts/header'); -%>
+
     <main>
       <form action="/" method="post">
         <input type="text" name="pLanguage" id="pLanguage" placeholder="programming language" />
@@ -24,15 +10,14 @@
       <div>
         <ul>
           <% if(langs.length){ %>
-             <li><%= langs %></li>
+             <% for(let x=0; x<langs.length; x++){ %>
+                <li><%= langs[x] %></li>
+             <%}%>
           <% }else{ %>
           <p>no data found</p>
           <%} %>
         </ul>
       </div>
     </main>
-    <footer>
-      <small>All right reserved by &copf; Jobayer Ahmed</small>
-    </footer>
-  </body>
-</html>
+    
+ <%- include('layouts/footer'); -%>
