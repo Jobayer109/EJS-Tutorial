@@ -13,8 +13,8 @@ const pLanguages = [];
 
 // routes
 app.get("/", (req, res) => {
-  res.send("Server running");
-  // res.render("index", { langs: pLanguages });
+  // res.send("Server running");
+  res.render("index.js", { langs: pLanguages });
 });
 
 app.get("/contact", (req, res) => {
