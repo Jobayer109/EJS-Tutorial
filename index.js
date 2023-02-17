@@ -14,7 +14,7 @@ const pLanguages = [];
 // routes
 app.get("/", (req, res) => {
   // res.send("Server running");
-  res.render("index.js", { langs: pLanguages });
+  res.render("index", { langs: pLanguages });
 });
 
 app.get("/contact", (req, res) => {
@@ -29,5 +29,5 @@ app.post("/", (req, res) => {
 
 // Server listening
 app.listen(port, () => {
-  console.log(`EJS app listening on port 127.0 0.1:${port}`);
+  console.log(`EJS app listening on port: ${port}`);
 });
