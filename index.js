@@ -29,5 +29,5 @@ app.post("/", (req, res) => {
 
 // Server listening
 app.listen(port, () => {
-  console.log(`EJS app listening on port: ${port}`);
+  console.log(`EJS app listening on port http://localhost:${port}`);
 });
