@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  min-height: 5vh;
+  background-color: hsl(0, 100%, 0%);
+}
+
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin: 2rem 1rem;
+  padding: 0.5rem;
+}
+nav ul li:hover {
+  background-color: #118e2c;
+  border-radius: 5px;
+}
+nav ul li a {
+  color: rgb(251, 253, 249);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+main {
+  min-height: 80vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  width: 300px;
+}
+
+button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 8px 20px;
+  background-color: #3bad1c;
+  color: aliceblue;
+}
+
+button:hover {
+  background-color: #2c7d15;
+}
+
+main div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+main div ul li {
+  background-color: white;
+  margin: 0.5rem 0;
+  width: 300px;
+  padding: 0.5rem;
+  transition: all 0.4s;
+  border-radius: 7px;
+}
+main div ul li:hover {
+  background-color: black;
+  color: white;
+  border: 0.5px solid white;
+  border-radius: 7px;
+}
+
+h2 {
+  color: #4bc12b;
+}
+h4 {
+  color: whitesmoke;
+  margin-top: 5px;
+}
+
+footer {
+  min-height: 6vh;
+  text-align: center;
+  background-color: #288b0c;
+  color: white;
+}
