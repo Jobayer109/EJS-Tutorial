@@ -22,9 +22,13 @@
       </form>
 
       <div>
-        <li>
-         <%= langs %>
-        </li>
+        <ul>
+          <% if(langs.length){ %>
+             <li><%= langs %></li>
+          <% }else{ %>
+          <p>no data found</p>
+          <%} %>
+        </ul>
       </div>
     </main>
     <footer>
