@@ -16,11 +16,11 @@ const pLanguages = [];
 // routes
 app.get("/", (req, res) => {
   // res.send("Server running");
-  res.render("index", { langs: pLanguages });
+  res.render("index.ejs", { langs: pLanguages });
 });
 
 app.get("/contact", (req, res) => {
-  res.render("contact", {});
+  res.render("contact.ejs", {});
 });
 
 app.post("/", (req, res) => {
