@@ -10,7 +10,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "./public")));
 app.set("view engine", "ejs");
-
 app.set("views", path.join(__dirname, "./views"));
 
 // actions
@@ -19,11 +18,11 @@ const pLanguages = [];
 // routes
 app.get("/", (req, res) => {
   // res.send("Server running");
-  res.render("index.ejs", { langs: pLanguages });
+  res.render("index", { langs: pLanguages });
 });
 
 app.get("/contact", (req, res) => {
-  res.render("contact.ejs");
+  res.render("contact");
 });
 
 app.post("/", (req, res) => {
